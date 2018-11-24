@@ -1,0 +1,117 @@
+/*header*/
+.btn-outline-success {
+  color: #262123;
+  border-color: #262123;
+}
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+/*body*/
+body {
+  font-family: "India Flower", cursive;
+  background-color: #fcfcfc;
+}
+
+#carouselExampleControls {
+  width: 60%;
+  margin: 20px auto;
+}
+
+h3 {
+  margin: 30px auto 20px auto;
+  padding-top: 10px;
+  text-align: center;
+  border-top: #262123 solid 2px;
+  width: 70%;
+}
+
+#kajNudimoContainer {
+  margin: auto;
+  text-align: left;
+}
+
+.containerDiv {
+  border: #262123 solid 1px;
+  background-color: #f8f9fa;
+  margin: 10px;
+  padding: 0;
+}
+
+.containerDiv:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+p {
+  padding: 10px;
+  display: inline;
+}
+
+i {
+  padding-left: 10%;
+  font-size: 1.2em;
+  margin-left: 180px;
+  margin-top: 7px;
+}
+
+.kajNudimoImages {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.col {
+  margin: 10px;
+}
+
+.accordion {
+  width: 70%;
+  margin: auto;
+}
+
+/*footer*/
+footer {
+  margin: 30px auto 10px auto;
+  border-top: #262123 solid 1px;
+  font-family: "India Flower", cursive;
+  background-color: #e1e1e1;
+}
+
+.footerContainer {
+}
+
+#footerImg {
+  width: 100%;
+}
+
+.footerText {
+  margin-top: 30px;
+}
+
+ul {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+#navigacija {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.footerAnchor {
+  margin-top: 5px;
+  margin-left: 100px;
+  display: block;
+  color: #262123;
+  text-decoration: none;
+}
+
+.footerAnchor:hover {
+  color: #646061;
+  text-decoration: none;
+}

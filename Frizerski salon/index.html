@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Frizerski salon</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Frizerski salon</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Kaj nudimo<span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Naroči se</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              FAQ
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cenik</a>
+              <a class="dropdown-item" href="#">Kdaj se lahko naročim</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Delovni čas</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">O nas</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Iskalnik"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Išči
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            id="slider"
+            class="d-block w-100"
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-0.3.5&s=acc439f64947b2e9cbabf845bcce0cae&auto=format&fit=crop&w=1950&q=80"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            id="slider"
+            class="d-block w-100"
+            src="https://images.unsplash.com/photo-1516470930795-6ba2564824aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85dbc401a40147ad0de3cd12a31921bc&auto=format&fit=crop&w=1949&q=80"
+            alt="Second slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <h3>Kaj nudimo</h3>
+
+    <div class="container" id="kajNudimoContainer">
+      <div class="row">
+        <div class="col-sm containerDiv">
+          <p>Nega Las</p>
+          <i class="fas fa-heart"></i>
+          <img
+            src="https://bit.ly/2Ah2PF2"
+            alt="nega las"
+            class="kajNudimoImages"
+          />
+        </div>
+
+        <div class="col-sm containerDiv">
+          <p>Barvanje</p>
+          <i class="fas fa-palette"></i>
+          <img
+            src="https://bit.ly/2POwwYK"
+            alt="barvanje"
+            class="kajNudimoImages"
+          />
+        </div>
+
+        <div class="col-sm containerDiv">
+          <p>Striženje</p>
+          <i class="fas fa-cut"></i>
+          <img
+            src="https://bit.ly/2DYoMwW"
+            alt="striženje"
+            class="kajNudimoImages"
+          />
+        </div>
+      </div>
+    </div>
+    <h3>Naroči se</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Ime in priimek</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Telefonska številka</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Datum</label>
+              <input
+                type="date"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Ura</label>
+              <input
+                type="time"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Ostalo (Spodaj lahko tudi naložite sliko željene pričeske.)"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGroupFile02"
+                />
+                <label
+                  class="custom-file-label"
+                  for="inputGroupFile02"
+                  aria-describedby="inputGroupFileAddon02"
+                  >Naloži sliko</label
+                >
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary">Potrdi</button>
+          </form>
+        </div>
+        <div class="col">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Dan</th>
+                <th scope="col">Delovne ure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ponedeljek</th>
+                <td>8:00 - 16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Torek</th>
+                <td>10:00 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sreda</th>
+                <td>8:00 - 16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Četrtek</th>
+                <td>8:00 - 16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Petek</th>
+                <td>12:00 - 20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sobota</th>
+                <td>8:00 - 16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Nedelja in prazniki</th>
+                <td>Zaprto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <h3>FAQ (Pogosta vprašanja)</h3>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-light"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Kakšen je salon in ekipa?
+            </button>
+          </h5>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+            laudantium explicabo rem debitis dolor, tenetur magni voluptas hic
+            voluptate repellendus perferendis cum repellat alias quae?
+            Voluptatibus numquam quam rerum repellendus recusandae amet tempore
+            incidunt itaque! Officiis eveniet illum vero a ex explicabo neque
+            cupiditate omnis eum! Optio magnam at ullam.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-light collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Ali sprejemate hišne ljubljenčke?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            quibusdam! Fuga atque ea consequuntur ipsum itaque placeat? Quas
+            nihil cupiditate alias culpa architecto quae nostrum voluptates et
+            id necessitatibus, vero dolor nesciunt neque possimus accusamus
+            quibusdam. Dignissimos adipisci nemo cupiditate.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-light collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Imate kakšne nagrade s tekmovanj?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. - Nesciunt
+            et quos laudantium reiciendis fugiat alias maiores maxime, vel
+            officiis necessitatibus, at in. Asperiores eaque est necessitatibus?
+            - Impedit optio et illo eveniet saepe temporibus inventore ducimus
+            est voluptas, veniam ex velit natus fugit unde officia aliquid omnis
+            vitae! - Ipsum minus iure laudantium, impedit adipisci assumenda
+            ratione at dolore deserunt dignissimos sequi nesciunt architecto et
+            non aliquam voluptatem in cumque eligendi deleniti obcaecati,
+            dolores tempora? Iusto at nisi quidem voluptatum, suscipit tempore?
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container footerContainer">
+      <div class="row">
+        <div class="col-sm footerText">
+          <h5>Kontakt</h5>
+          <ul>
+            <li>Frizer d.o.o</li>
+            <li>Davčna št.: 12345678</li>
+            <li>Frizerska ulica 5, 1000 Ljubljana</li>
+            <li>Tel.: 01/12 12 12</li>
+            <li>Email: frizer@frizer.com</li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <img src="https://bit.ly/2Qk5kQQ" alt="logo" id="footerImg" />
+        </div>
+        <div class="col-sm footerText">
+          <h5 id="navigacija">Navigacija</h5>
+          <a href="#" class="footerAnchor">Kaj nudimo</a>
+          <a href="#" class="footerAnchor">Naroči se</a>
+          <a href="#" class="footerAnchor">Pogosta vprašanja</a>
+          <a href="#" class="footerAnchor">O nas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
